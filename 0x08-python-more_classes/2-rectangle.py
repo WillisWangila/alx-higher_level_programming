@@ -83,12 +83,25 @@ class Rectangle:
         Returns:
             int: Area of the rectangle
         """
-        area = self.__height * self.__width
-        return area
+        return self.__height * self.__width
 
-    def perimiter(self):
-        if self.__width or self.__height == 0:
-            perimiter = 0
+    def perimeter(self):
+        """
+        Calculates perimeter of a rectangle
+
+        Returns:
+            _type_: _description_
+        """
+        if self.__width == 0 or self.__height == 0:
+            return 0
         else:
-            perimiter = ((2 * self.__height) + (2 * self.__width))
-        return perimiter
+            return (2 * self.__height) + (2 * self.__width)
+
+my_rectangle = Rectangle(2, 4)
+print("Area: {} - Perimeter: {}".format(my_rectangle.area(), my_rectangle.perimeter()))
+
+print("--")
+
+my_rectangle.width = 10
+my_rectangle.height = 3
+print("Area: {} - Perimeter: {}".format(my_rectangle.area(), my_rectangle.perimeter()))
