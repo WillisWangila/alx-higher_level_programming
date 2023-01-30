@@ -59,9 +59,6 @@ class Square:
         """
         side = self.__size
         for i in range(side):
-            for i in range(side):
-                if (side == 0):
-                    print("\n")
-                else:
-                    print('*', end=' ')
+            print('#' * side)
+        if side == 0:
             print()
