@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+Define class square
+"""
+
 
 class Square:
     """
@@ -94,8 +98,3 @@ class Square:
                 else:
                     print('*', end=' ')
             print()
-
-
-my_square_2 = Square(6, (3, 5))
-my_square_2.position = (2, (4, -4))
-print(my_square_2.position)

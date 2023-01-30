@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+Define class square
+"""
+
 
 class Square:
     """
@@ -21,13 +25,6 @@ class Square:
         """
         return self.__size
 
-    # 1. The first line of the setter method definition is decorator @size.setter.
-    # 2. The decorator creates and returns a setter method for attribute size.
-    # 3. The setter method takes one argument, value.
-    # 4. The setter method checks if the value is an integer.
-    # 5. The setter method checks if the value is greater than or equal to 0.
-    # 6. If the value is an integer and greater than or equal to 0, the setter method assigns the value to the attribute size.
-    # 7. If the value is not an integer or is less than 0, the setter method raises an error.
     @size.setter
     def size(self, value):
         """Sets the value of size
