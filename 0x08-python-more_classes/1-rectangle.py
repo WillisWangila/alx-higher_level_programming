@@ -75,10 +75,3 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         else:
             self.__height = value
-
-my_rectangle = Rectangle(9, 7)
-print(my_rectangle.__dict__)
-
-my_rectangle.width = 10
-my_rectangle.height = 3
-print(my_rectangle.__dict__)
