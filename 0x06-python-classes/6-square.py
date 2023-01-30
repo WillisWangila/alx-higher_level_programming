@@ -97,18 +97,3 @@ class Square:
         for i in range(self.__size):
             print(" " * self.__position[0], end= "")
             print("#" * self.__size)
-
-mysquare = Square(3, (1, 0))
-mysquare.my_print()
-
-mysquare = Square(3, (0, 1))
-mysquare.my_print()
-
-mysquare = Square(3, (1, 1))
-mysquare.my_print()
-
-mysquare = Square(5, (3, 2))
-mysquare.my_print()
-
-
-
