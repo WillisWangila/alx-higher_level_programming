@@ -7,11 +7,12 @@ def add_integer(a, b=98):
     Casts float to int before calculating the sum
 
     Args:
-        a (int or float): !st variable
+        a (int or float): 1st variable
         b (int, or float optional): 2nd variable. Defaults to 98.
 
     Raises:
         TypeError: Raised if a is not an int or float
+        TypeError: Raised if b is not an int or float
 
     Returns:
         int: sum of a and b
