@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Defines a funtion that adds 2 numbers"""
 
+
 def add_integer(a, b=98):
     """
     Checks type of variables and gets the sum of a and b
