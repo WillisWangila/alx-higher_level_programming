@@ -2,6 +2,7 @@
 """
 Reads a text file and prints to stdout
 """
+
 def read_file(filename=""):
     """Opens file and prints content
 
