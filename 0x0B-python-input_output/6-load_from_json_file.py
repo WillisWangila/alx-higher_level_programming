@@ -12,5 +12,5 @@ def load_from_json_file(filename):
     Args:
         filename (json): file used to create the object
     """
-    with open(filename, "r") as openfile:
+    with open(filename) as openfile:
         json.load(openfile)
