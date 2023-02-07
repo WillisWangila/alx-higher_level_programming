@@ -4,7 +4,6 @@
 Defines a function that returns dictionary description with
 simple data structure for JSON serialization
 """
-import json
 
 
 def class_to_json(obj):
