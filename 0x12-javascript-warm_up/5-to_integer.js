@@ -1,10 +1,9 @@
 #!/usr/bin/node
 
-const process = require('process');
-const args = process.argv.slice(2);
-let num = '';
-if ((num = Math.trunc(args[0]))) {
-  console.log('My number: ', num);
-} else {
+const { argv } = require('process');
+const num = Math.floor(argv[2]);
+if (isNaN(num)) {
   console.log('Not a number');
+} else {
+  console.log('My number: ', num);
 }
