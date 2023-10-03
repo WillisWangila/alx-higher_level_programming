@@ -3,9 +3,9 @@
 from urllib import request
 
 if __name__ == "__main__":
-    with request.urlopen("https://intranet.hbtn.io/status") as body:
-        body = body.read()
+    with request.urlopen("https://intranet.hbtn.io/status") as response:
+        response = response.read()
     print("Body response:")
-    print("\t- type:", type(body))
-    print("\t- content:", body)
-    print("\t- utf8 content:", body.decode('utf-8'))
+    print("\t- type:", type(response))
+    print("\t- content:", response)
+    print("\t- utf8 content:", response.decode('utf-8'))
